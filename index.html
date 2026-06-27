@@ -62,8 +62,8 @@
     .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
     .btn-primary { background: var(--gold); color: var(--dark); padding: 16px 36px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; }
     .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
-    .btn-outline { border: 2px solid rgba(255,255,255,0.3); color: var(--white); padding: 16px 36px; border-radius: 8px; font-weight: 600; font-size: 1rem; text-decoration: none; transition: all 0.2s; }
-    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+    .btn-outline { background: var(--gold); color: var(--dark); padding: 16px 36px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.2s; border: none; }
+    .btn-outline:hover { background: var(--gold-light); transform: translateY(-2px); }
     .hero-stats { display: flex; gap: 48px; justify-content: center; margin-top: 64px; flex-wrap: wrap; }
     .stat { text-align: center; }
     .stat-num { font-family: 'Montserrat', sans-serif; font-size: 2rem; font-weight: 800; color: var(--gold); }
@@ -109,8 +109,8 @@
     .plan-ul li::before { content: '\2713'; color: var(--gold); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
     .plan-cta { display: block; background: var(--gold); color: var(--dark); padding: 14px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; text-decoration: none; text-align: center; transition: all 0.2s; margin-top: auto; }
     .plan-cta:hover { background: var(--gold-light); }
-    .plan-cta.outline { background: transparent; border: 2px solid #30363d; color: var(--white); }
-    .plan-cta.outline:hover { border-color: var(--gold); color: var(--gold); }
+    .plan-cta.outline { background: var(--gold); border: none; color: var(--dark); }
+    .plan-cta.outline:hover { background: var(--gold-light); }
     .pricing-note { text-align: center; margin-top: 24px; font-size: 0.85rem; color: #777; }
     .alacarte { margin-top: 72px; }
     .alacarte-title { text-align: center; font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--dark); margin-bottom: 8px; }
@@ -186,15 +186,15 @@
     .form-success .checkmark { font-size: 3rem; margin-bottom: 12px; }
     .form-success h4 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; margin-bottom: 8px; }
     .form-success p { font-size: 0.9rem; color: #555; }
-    .btn-msg { border: 2px solid rgba(255,255,255,0.3); color: var(--white); padding: 16px 36px; border-radius: 8px; font-weight: 600; font-size: 1rem; text-decoration: none; transition: all 0.2s; background: none; cursor: pointer; font-family: 'Open Sans', sans-serif; display: inline-flex; align-items: center; }
-    .btn-msg:hover { border-color: var(--gold); color: var(--gold); }
-    .btn-msg-dark { border: 2px solid var(--dark); color: var(--dark); padding: 16px 36px; border-radius: 8px; font-weight: 600; font-size: 1rem; text-decoration: none; transition: all 0.2s; background: none; cursor: pointer; font-family: 'Open Sans', sans-serif; display: inline-block; }
-    .btn-msg-dark:hover { border-color: var(--gold); color: var(--gold); }
-    .nav-msg { background: transparent !important; color: var(--gold) !important; border: 1.5px solid var(--gold) !important; padding: 9px 20px !important; border-radius: 6px; font-weight: 700 !important; cursor: pointer; font-family: 'Open Sans', sans-serif; font-size: 0.9rem; }
-    .nav-msg:hover { background: rgba(201,153,42,0.1) !important; }
-    .plan-msg { display: block; background: transparent; border: 2px solid #30363d; color: var(--white); padding: 14px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; text-align: center; transition: all 0.2s; margin-top: 10px; cursor: pointer; font-family: 'Open Sans', sans-serif; width: 100%; }
-    .plan-msg:hover { border-color: var(--gold); color: var(--gold); }
-    .plan-msg.gold { background: var(--gold); color: var(--dark); border-color: var(--gold); }
+    .btn-msg { background: var(--gold); color: var(--dark); padding: 16px 36px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.2s; border: none; cursor: pointer; font-family: 'Open Sans', sans-serif; display: inline-flex; align-items: center; }
+    .btn-msg:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-msg-dark { background: var(--gold); color: var(--dark); padding: 16px 36px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.2s; border: none; cursor: pointer; font-family: 'Open Sans', sans-serif; display: inline-block; }
+    .btn-msg-dark:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .nav-msg { background: var(--gold) !important; color: var(--dark) !important; border: none !important; padding: 10px 22px !important; border-radius: 6px; font-weight: 700 !important; cursor: pointer; font-family: 'Open Sans', sans-serif; font-size: 0.9rem; }
+    .nav-msg:hover { background: var(--gold-light) !important; }
+    .plan-msg { display: block; background: var(--gold); color: var(--dark); border: none; padding: 14px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; text-align: center; transition: all 0.2s; margin-top: 10px; cursor: pointer; font-family: 'Open Sans', sans-serif; width: 100%; }
+    .plan-msg:hover { background: var(--gold-light); }
+    .plan-msg.gold { background: var(--gold); color: var(--dark); }
     .plan-msg.gold:hover { background: var(--gold-light); }
 
     /* RESPONSIVE */
